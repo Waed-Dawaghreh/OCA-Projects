@@ -5,13 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Corner</title>
+    <style>
+        table ,th,td{
+            border: 2px solid teal;
+        }
+    </style>
 </head>
 
 <body>
 
     <h1> Wlecome To My Coffee Corner!</h1>
     <hr>
-    <img src="corn.jpeg" alt="My Coffee Corner" width="600px" height="400px"/>
+    <img src="/imgs/corn.jpeg" alt="My Coffee Corner" width="600px" height="400px"/>
     <hr>
     <h3>About My Small Project </h3>
     <hr>
@@ -43,7 +48,104 @@
         </li>
     </ol>
     <br>
+
     <hr>
+
+    ,<table>
+        <thead>
+            <tr>
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>email</th>
+            <th>mob num</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>1</td>
+            <td>Waed</td>
+            <td>Dawaghreh</td>
+            <td>waed@gmail.com</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td colspan="3">Dana</td>
+            
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Mohammad</td>
+            <td rowspan="2">Shwaiki</td>
+            <td>Shwaiki@gmail.com</td>
+          </tr>
+    </table>
+     <br>
+     <br>
+     <hr>
+
+    <!--Task #2 Forms -->
+    <form>
+
+        <label for="fname">First Name:</label>
+        <br>
+
+        <input type="text" id="fname" name="fname">
+        <br>
+        <label for="phoneNum">Phone Number:</label>
+        <br>
+        <input type="number" id="phoneNum" name="phoneNum">
+        <br>
+        <label for="Email">Email Address:</label>
+        <br>
+        <input type="email" id="Email" name="Email">
+        <br>
+
+        <label for="dT">Date:</label>
+        <br>
+
+        <input type="date" id="dT" name="dT">
+        <br>
+        <br>
+        <!--Radio Button Section-->
+        <label >Gender :</label>      
+        <input type="radio" id="male" name="gen" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gen" value="female">
+        <label for="female">Female</label>
+        <br>
+        <hr>
+        <!--THe checkbox-->
+        <label >What Programming Languages Do You Know :</label><br>
+        <input type="checkbox" id="lang1" name="lang1" value="c++">
+        <label for="lang1"> C++</label><br>
+        <input type="checkbox" id="lang2" name="lang2" value="JavaScript">
+        <label for="lang2"> JavaScript</label><br>
+        <input type="checkbox" id="lang3" name="lang3" value="C#">
+        <label for="lang3"> C#</label>
+        <br>
+        <hr>
+        <label for="food">Choose Your Lunch:</label>
+        <select id="food" name="cars">
+        <option value="Mansaf">Mansaf</option>
+        <option value="kbbsah">Kabsah</option>
+        </select>
+        <br>
+        <br>
+        <!--Textarea Input-->
+        <label for="com">Comments:</label>
+        <br>
+        <textarea name="message" rows="10" cols="40">
+           Write Your Comment Here.
+            </textarea>
+            <br>
+        <input type="submit" value="Submit">
+
+
+
+    </form>
+
+    <hr>
+
     <h4>Our Vision </h4>
     <hr>
     <p id="vesion">To Mack Every One Happy Just By Drinking Coffee </p>
