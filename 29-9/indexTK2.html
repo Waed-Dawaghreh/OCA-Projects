@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        label {
+            padding: 12px 12px 12px 0;
+            display: flexbox;
+        }
+
+        input [type=text] {
+            width: 50%;
+            padding: 12px;
+            resize: vertical;
+
+        }
+
+        .container {
+            padding: 20px;
+            margin-left: 700px;
+            margin-right: 500px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        form {
+            background-color: rgb(255, 251, 199);
+        }
+
+        .col-1 {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+        }
+
+        .col-2 {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            margin-bottom: 9px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <br>
+
+    <div class="container">
+        <form>
+            <fieldset>
+                <legend style="text-align: justify;">Personal Details </legend>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="fname">First Name </label>
+                    </div>
+                    <div class="col-2">
+                        <input type="text" name="firstname" id="fname">
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="lname">last Name </label>
+                        </div>
+                        <div class="col-2">
+                            <input type="text" name="lastname" id="lname">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="email">Email Address </label>
+                        </div>
+                        <div class="col-2">
+                            <input type="email" name="emailAddr" id="email">
+                        </div>
+                        <div class="row">
+                            <div class="col-1">
+                                <label for="grnder">Gender </label>
+                            </div>
+                            <div class="col-2">
+                                <input type="radio" id="female" name="gender" value="female">
+
+
+                                <label for="grnder">Femail </label>
+                                <input type="radio" id="male" name="gender" value="male">
+
+                                <label for="grnder">Male </label>
+                            </div>
+
+                        </div>
+                    </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <!-----------------------Next Section--------------------->
+
+    <div class="container" style="padding-top: 1px;">
+        <form>
+            <fieldset>
+                <legend style="text-align: justify;">City</legend>
+                <div class="row">
+                    <div class="col-1">
+                        <label for="city" style="margin-left: 180px;margin-right: 20px;">City</label>
+                    </div>
+                    <div class="col-2" style="width: 0%;">
+                        <select name="city" id="city">
+                            <option value="Irbed">Irbed</option>
+                            <option value="Amman">Amman</option>
+                            <option value="Jerash">Jerash</option>
+                        </select>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>
