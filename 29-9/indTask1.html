@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise #3- Registration Form</title>
+
+    <style>
+        div {
+            /* margin-top: 60px;
+            text-align: center;
+
+            width: 500px;
+            float: left;
+            align-content: space-between;
+            padding-left: 700px;
+            align-items: center; */
+            float: left;
+            margin-left: 800px;
+            align-items: center;
+            justify-content: center;
+            display: flexbox;
+
+        }
+
+        div form {
+            background-color: rgb(254, 255, 217);
+        }
+
+        .labels {
+            text-align: center;
+            display: flexbox;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding-left: 20px;
+        }
+
+        .inputs {
+            display: flexbox;
+            margin-left: 20px;
+            padding-right: 20px;
+        }
+
+        button {
+            margin-top: 20px;
+            margin-left: 160px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Regestiration Form</h1>
+    <br>
+    <br>
+    <div class="container">
+
+        <form>
+            <fieldset>
+                <legend ">Personalia:</legend>
+                    <div class=" labels">
+                    <label for=" fname">First name</label><br>
+                    <br>
+                    <label for="lname">Last name</label><br>
+                    <br>
+                    <label for="email">Email Address</label>
+                    <br><br>
+                    <label for="gender">Gender</label>
+
+    </div>
+    <div class="inputs">
+
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+    </div>
+
+    </fieldset>
+    </form>
+
+
+    </div>
+
+    <div style="margin-top: 10px; width: 397px;">
+        <form>
+            <fieldset>
+                <legend>City:</legend>
+                <label for="city" style="margin-left: 120px;margin-right: 20px;">City</label>
+
+                <select name="city" id="city">
+                    <option value="Irbed">Irbed</option>
+                    <option value="Amman">Amman</option>
+                    <option value="Jerash">Jerash</option>
+                </select>
+            </fieldset>
+        </form>
+        <button type="button">Subscribe</button>
+    </div>
+
+</body>
+
+</html>
+<form>
+    <!-- <fieldset>
+        <legend style="align-content: stretch;">Personalia:</legend>
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br><br>
+        <input type="submit" value="Submit">
+    </fieldset>
+</form> -->
