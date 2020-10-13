@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+
+        }
+
+
+        #box-1 {
+            flex: 2;
+            background-color: orange;
+            color: white;
+            text-align: center;
+            line-height: 80vh;
+        }
+
+        #box-2 {
+            flex: 2;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            line-height: 80vh;
+        }
+
+        @media screen and (max-width:800px) {
+
+            .container,
+            #box-1,
+            #box-2 {
+                width: 100%;
+
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box-1">
+            <h1 style="font-size:3vw;">First Part.</h1>
+        </div>
+        <div id="box-2">
+            <h1 style="font-size:3vw;">Second Part.</h1>
+        </div>
+    </div>
+</body>
+
+</html>
