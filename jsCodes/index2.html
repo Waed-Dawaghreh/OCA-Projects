@@ -29,7 +29,10 @@
         border: black solid 1px;
         padding: 0.3rem;
         background-color: rgb(121, 198, 204);
+        box-shadow: gray 2px 2px 12px;
         text-align: center;
+        font-size: large;
+        font-weight: bold;
         padding-bottom: 2rem;
       }
       .gridCards {
@@ -41,6 +44,8 @@
       .cards {
         border: black solid 1px;
         padding: 0.5rem;
+        font-size: medium;
+        font-weight: bold;
         background-color: rgb(204, 121, 121);
         padding-bottom: 4rem;
       }
@@ -56,48 +61,71 @@
       </div>
       <div class="gridCards">
         <div class="cards" id="card1">Card 1</div>
-        <div class="cards" id="card2">Card 2</div>
-        <div class="cards" id="card3">Card 3</div>
-        <div class="cards" id="card4">Card 4</div>
+        <div
+          class="cards"
+          id="card2"
+          style="background-color: rgb(195, 152, 201)"
+        >
+          Card 2
+        </div>
+        <div
+          class="cards"
+          id="card3"
+          style="background-color: rgb(134, 216, 131)"
+        >
+          Card 3
+        </div>
+        <div class="cards" id="card4" style="background-color: coral">
+          Card 4
+        </div>
       </div>
     </div>
 
     <script>
+      // document.getElementById("card1").innerHTML = "Hello World Using JS";
+
+      // $(function () {
+      //   $("#card1").html("Hello World Using Jquery");
+      // });
+      //==================================
+
+      // $(function () {
+      //   $("#btn1").mouseover("click", function () {
+      //     $("#card1").fadeOut(1000);
+      //   });
+
+      //   $("#btn2").mouseover("click", function () {
+      //     $("#card2").fadeOut(1000);
+      //   });
+      //   $("#btn3").mouseover("click", function () {
+      //     $("#card3").fadeOut(1000);
+      //   });
+      //   $("#btn4").mouseover("click", function () {
+      //     $("#card4").fadeOut(1000);
+      //   });
+      //   $("#btn1").mouseover("click", function () {
+      //     $("#card1").fadeIn(1000);
+      //   });
+
+      //   $("#btn2").mouseover("click", function () {
+      //     $("#card2").fadeIn(1000);
+      //   });
+      //   $("#btn3").mouseover("click", function () {
+      //     $("#card3").fadeIn(1000);
+      //   });
+      //   $("#btn4").mouseover("click", function () {
+      //     $("#card4").fadeIn(1000);
+      //   });
+      // });
+
+      //=====================================
       $(function () {
         $(".btns").on("click", function () {
           var cardId = $(this).attr("data-panelId");
-          //   alert(cardId);
+          alert(cardId);
           $("#" + cardId).toggle();
         });
       });
-      //   $(function () {
-      //     $("#btn1").on("click", function () {
-      //       $("#card1").html("Hello World!");
-      //     });
-
-      // $("#btn2").mouseover("click", function () {
-      //   $("#card2").fadeOut(1000);
-      // });
-      // $("#btn3").mouseover("click", function () {
-      //   $("#card3").fadeOut(1000);
-      // });
-      // $("#btn4").mouseover("click", function () {
-      //   $("#card4").fadeOut(1000);
-      // });
-      // $("#btn1").mouseover("click", function () {
-      //   $("#card1").fadeIn(1000);
-      // });
-
-      // $("#btn2").mouseover("click", function () {
-      //   $("#card2").fadeIn(1000);
-      // });
-      // $("#btn3").mouseover("click", function () {
-      //   $("#card3").fadeIn(1000);
-      // });
-      // $("#btn4").mouseover("click", function () {
-      //   $("#card4").fadeIn(1000);
-      // });
-      //   });
     </script>
   </body>
 </html>
