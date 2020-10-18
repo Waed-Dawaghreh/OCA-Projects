@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var childrenNum = prompt("Plz Enter The Number Of Your Children");
+      var partnerName = prompt("Plz Enter Your Partner Name");
+      var geoLocation = prompt("Plz Enter Your Place of residence");
+      var jobTitle = prompt("Plz Enter Your Job Title");
+      function tellFortune(childrenNum, partnerName, geoLocation, jobTitle) {
+        let tellF =
+          "You will be a " +
+          jobTitle +
+          " " +
+          "in " +
+          geoLocation +
+          "," +
+          " and married to " +
+          partnerName +
+          " with " +
+          childrenNum +
+          " kids.";
+        return tellF;
+      }
+      var conChildrenNum = parseInt(childrenNum);
+      alert(tellFortune(conChildrenNum, partnerName, geoLocation, jobTitle));
+    </script>
+  </body>
+</html>
