@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            background-color: rgb(236, 230, 170);
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-left: 40vw;
+            margin-top: 5rem;
+            border-radius: 15px;
+            box-shadow: gray 15px 15px 15px;
+            max-width: 400px;
+            background-color: white;
+
+
+        }
+
+        .item {
+            display: flex;
+            flex-direction: row;
+
+            flex-basis: 100px;
+            background-color: white;
+
+        }
+
+        .img-cont {
+            padding: .5rem;
+            flex: 1;
+
+            background-color: white;
+
+        }
+
+        .img-cont>img {
+
+            border-radius: 50%;
+            width: 8vw;
+            height: 11vh;
+
+        }
+
+        .content {
+            flex: 2;
+            padding: .5rem;
+            background-color: white;
+
+
+        }
+
+        p {
+            background-color: white;
+            font-size: large;
+
+        }
+
+        .address {
+            color: lightgrey;
+            font-size: medium;
+        }
+
+        .item:nth-child(odd) {
+            border-bottom: rgb(156, 153, 153) 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="item">
+            <div class="img-cont"><img src="/imgs/user.jpeg" alt="This Is The User Picture"></div>
+            <div class="content">
+                <p>User #1</p>
+                <p class="address">Amman, Jordan</p>
+            </div>
+        </div>
+        <div class="item" style=" border-bottom: rgb(156, 153, 153) 1px solid;">
+            <div class="img-cont"><img src="/imgs/user.jpeg" alt="This Is The User Picture"></div>
+            <div class="content">
+                <p>User #2</p>
+                <p class="address ">Jerash, Jordan</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="img-cont"><img src="/imgs/user.jpeg" alt="This Is The User Picture"></div>
+            <div class="content">
+                <p>User #3</p>
+                <p class="address">Salt, Jordan</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="img-cont"><img src="/imgs/user.jpeg" alt="This Is The User Picture"></div>
+            <div class="content">
+                <p>User #4</p>
+                <p class="address">Irbed, Jordan</p>
+            </div>
+        </div>
+</body>
+
+</html>

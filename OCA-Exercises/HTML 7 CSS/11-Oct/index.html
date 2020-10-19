@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0PX;
+            background-color: #f2c9d0;
+            font-family: 'chilanka';
+        }
+
+        header {
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            margin: 2% 0px 3% 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0px;
+
+        }
+
+        header ::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 4px;
+            width: 100%;
+            background-color: #4bcdda;
+        }
+
+        h1 {
+            font-size: 3.2rem;
+            color: #ffffff;
+
+        }
+
+        .logo {
+            width: 8rem;
+            height: 8rem;
+            margin-left: 1rem;
+            transition: .5s;
+        }
+
+        .logo:hover {
+            transform: translateY(-10px);
+        }
+
+        .container {
+            padding: 2% 2% 2% 2%;
+            height: 90rem;
+            margin: 0 auto;
+            display: grid;
+            width: 90vw;
+            border: #4bcdda solid 3px;
+            border-radius: 20px;
+            box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.3);
+            background-color: #f2c9d0;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 0.5rem;
+        }
+
+        .imgContainer img {
+            width: 10rem;
+            /* border-radius: 6px; */
+            /* transition: .5s; */
+            margin-left: 40%;
+            margin-top: 3rem;
+        }
+
+        .imgContainer img:hover {
+
+            transform: rotate(-360deg);
+            transition: .5s;
+        }
+
+        .txtWrapper {
+            text-align: center;
+            /* margin-top: 35%; */
+
+        }
+
+        .txtWrapper h3 {
+            color: #ffffff;
+            font-size: 3rem;
+            padding: 1rem;
+        }
+
+        .txtWrapper h3:hover {
+            transform: translateY(-15px);
+            transition: .5s;
+        }
+
+        .txtWrapper p {
+            text-align: left;
+            font-size: 1.2rem;
+            color: #3b7177;
+        }
+
+        .videoTitle {
+            text-align: center;
+            margin-top: 10rem;
+
+        }
+
+        .videoTitle h3 {
+            color: #ffffff;
+            font-size: 3rem;
+            padding: .5rem;
+        }
+
+        .JSinging img {
+            margin-left: 0;
+        }
+
+        .iframeContainer iframe {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 650px) {
+            .container {
+                grid-template-columns: 1fr;
+                height: 160rem;
+                margin-bottom: 1rem;
+            }
+
+            .imgContainer img {
+
+                margin-left: 30%;
+                margin-top: 2rem;
+                margin-bottom: .5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome To Jigglypuff World</h1>
+        <img class="logo" src="/img/Jhello.png">
+
+    </header>
+
+    <div class="container">
+        <div class="imgContainer">
+            <img src="/img/happy.png">
+        </div>
+        <div class="txtWrapper">
+            <h3>Hi I'm Jigglypuff</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, soluta. Molestiae at blanditiis vitae
+                expedita facere! Repudiandae dolorem inventore dolore voluptate, consequuntur ad eaque iusto. Quam vero
+                consectetur obcaecati reprehenderit libero doloribus tempore culpa omnis. Excepturi impedit labore
+                corporis harum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam fugiat vitae. Magnam ipsa quis
+                autem eius, amet qui, voluptas aperiam dolor corrupti dicta quo, earum explicabo officia delectus neque!
+            </p>
+        </div>
+        <div class="imgContainer">
+            <img src="/img/JMad.png">
+        </div>
+        <div class="txtWrapper">
+            <h3>I'm Mad Wanna Know Why?</h3>
+            <!-- <h4>Let Me Till You Why?</h4> -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel, soluta. Molestiae at blanditiis vitae
+                expedita facere! Repudiandae dolorem inventore dolore voluptate, consequuntur ad eaque iusto. Quam vero
+                consectetur obcaecati reprehenderit libero doloribus tempore culpa omnis. Excepturi impedit labore
+                corporis harum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat aliquam fugiat vitae. Magnam ipsa quis
+                autem eius, amet qui, voluptas aperiam dolor corrupti dicta quo, earum explicabo officia delectus neque!
+            </p>
+        </div>
+
+        <div class="videoTitle">
+            <h3>Hear Me Singing</h3>
+            <div class="imgContainer JSinging">
+                <img src="/img/Jsinging.webp">
+            </div>
+        </div>
+
+
+        <div class="iframeContainer">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/d2NTtbusUso" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+    <!-- <div class="videoWrapper">
+      
+    </div> -->
+</body>
+
+</html>

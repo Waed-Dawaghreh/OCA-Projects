@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var array = [
+        [1, 3, 5, 8],
+        [2, 4, 6, 9],
+      ];
+      console.log(array[1]);
+      var newArray = array[1].reverse();
+      console.log(newArray);
+
+      //===============================
+      var Maths;
+      var English;
+      var Arabic;
+      var Bio;
+      var Computer;
+      var Religion;
+      const numOfSubjects = 6;
+
+      var name = prompt("Plx Enter Your Name");
+
+      Maths = parseInt(prompt("Plx Enter Your Math Mark"));
+
+      English = parseInt(prompt("Plx Enter Your English Mark"));
+
+      Arabic = parseInt(prompt("Plx Enter Your Arabic Mark"));
+
+      Bio = parseInt(prompt("Plx Enter Your Bio Mark"));
+
+      Computer = parseInt(prompt("Plx Enter Your Computer Mark"));
+
+      Religion = parseInt(prompt("Plx Enter Your Religion Mark"));
+
+      if (
+        Maths >= 0 &&
+        Maths <= 100 &&
+        English >= 0 &&
+        English <= 100 &&
+        Arabic >= 0 &&
+        Arabic <= 100 &&
+        Bio >= 0 &&
+        Bio <= 100 &&
+        Computer >= 0 &&
+        Computer <= 100 &&
+        Religion >= 0 &&
+        Religion <= 100
+      ) {
+        var sum = Maths + English + Arabic + Bio + Computer + Religion;
+        var avg = sum / numOfSubjects;
+      } else {
+        alert("Not A Valid Entries");
+      }
+
+      //   console.log(sum + " " + avg);
+      //   console.log(typeof avg);
+      if (avg >= 50 && avg < 60) {
+        console.log("Pass");
+      } else if (avg >= 60 && avg < 70) {
+        console.log("Average");
+      } else if (avg >= 70 && avg < 80) {
+        console.log("Good");
+      } else if (avg >= 80 && avg < 90) {
+        console.log("Very Good");
+      } else if (avg >= 90 && avg <= 100) {
+        console.log("Excellent");
+      }
+    </script>
+  </body>
+</html>
