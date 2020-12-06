@@ -7,7 +7,7 @@ $(function () {
       }
     });
   });
-// ===================
+// ===================Log In ===================
 console.log(localStorage.length);
 if(!localStorage.length){
 localStorage.setItem("id",0);
